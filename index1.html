@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parking App</title>
+    <link rel="stylesheet" href="style10.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>PARKING APP</h1>
+        <center><img src="trasferimento.png" width="100px"></center>
+        <h3>
+            <center>Trova il parcheggio perfetto per te!</center>
+        </h3>
+
+        <form action="registrazione.php" method="POST">
+            <p><label><strong>
+                        <marquee>Inserisci i tuoi dati personali per procedere alla registrazione</marquee>
+                    </strong></label></p>
+
+            <p><label>Inserisci il tuo nome</label></p>
+            <input type="text" name="nome">
+
+            <p><label>Inserisci il tuo cognome</label></p>
+            <input type="text" name="cognome">
+
+            <p><label>Inserisci data di nascita</label></p>
+            <input type="date" name="date">
+
+            <p><label><b>Sesso</b></label></p>
+            <div class="container-input">
+                <label>Maschio</label><input type="radio" name="sesso" value="m">
+            </div>
+            <div class="container-input">
+                <label>Femmina</label><input type="radio" name="sesso" value="f">
+            </div>
+
+            <p><label>Inserisci l'indirizzo e-mail</label></p>
+            <input type="email" name="email">
+            <p><label>Inserisci username</label></p>
+            <input type="text" name="username">
+
+            <p><label>Inserisci password</label></p>
+            <input type="password" name="password">
+            <input type="submit" value="Registrati">
+        </form>
+
+</body>
+
+</html>

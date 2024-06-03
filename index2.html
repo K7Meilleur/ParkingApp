@@ -1,0 +1,63 @@
+<html>
+<!DOCTYPE html>
+<head>
+    <title>PARKING APP</title>
+    <link rel="stylesheet" href="style10.css">
+</head>
+<body>
+    <div class="container">
+    <h1>INSERISCI DATI AUTOMOBILE</h1><center><img src="trasferimento.png" width="100px"></center>
+        <p><label><strong> Inserisci il modello dell'auto</strong></label></p>
+             <select name="modello">
+                <option value="Mercedes">Mercedes</option>
+                <option value="Fiat">Fiat</option>
+                <option value="Lancia">Lancia</option>
+                <option value="Alfa Romeo">Alfa Romeo</option>
+                <option value="Toyota">Toyota</option>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Seat">Seat</option>
+                <option value="Citroen">Citroen</option>
+                <option value="Dacia">Dacia</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Porsche">Porsche</option>
+                <option value="Ford">Ford</option>
+                <option value="Peugeot">Peugeot</option>
+            </select>
+            
+            <p><label><strong> Inserisci la targa  della tua auto</strong></label></p>
+            <input type="text" name="targa">
+            <p><label><strong> Inserisci l'indirizzo del parcheggio</strong></label></p>
+            <input type="text" name="indirizzo_parcheggio">
+            
+            <p><label><strong> Inserisci il tempo di parcheggio</strong></label></p>
+               <div class="container-input">
+                <label>60 minuti</label> <input type="radio" name="tempo_parcheggio" value="60"> 
+               </div>
+               <div class="container-input">
+                <label>2 ore</label> <input type="radio" name="tempo_parcheggio" value="120"> 
+               </div>
+               <div class="container-input">
+                <label>3 ore</label> <input type="radio" name="tempo_parcheggio" value="180">
+               </div>
+               <div class="container-input">
+                <label>4 ore</label> <input type="radio" name="tempo_parcheggio" value="240">
+               </div>
+            
+                <p><strong>Promo auto elettrica/ibrida, sconto fino al 40%</strong></p>
+            <select name="tipo_motore">
+                <option value="termico">Motore termico</option>
+                <option value="elettrico">Elettrico</option>
+                <option value="ibrido">Ibrido</option>
+            </select>
+            <p><label><strong> Inserisci il numero della carta</strong></label></p><img src="download.png" width="40px">
+            <input type="number" name="numero_carta">
+            <p><label>Inserisci il CVC</label></p>
+            <input type="password" name="cvc">
+            <p><label>Inserisci l'intestatario della carta</label></p>
+            <input type="text" name="intestatario_carta">
+            <input type="submit" value="Conferma">
+        </form>
+    </div>
+    </body>
+    </html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+   
+    <title>Contatti</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #000000;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(73, 72, 72, 0.1);
+        }
+        main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            flex: 1;
+        }
+        .contact-info {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 4px;
+            margin: 30px;
+            max-width: 400px;
+            text-align: center;
+        }
+        .contact-form {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 100px;
+            border-radius: 4px;
+            margin: 30px;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+        footer {
+            background-color: #000000;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            border: none;
+            border-radius: 4px;
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        button[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #444;
+        }
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            .contact-info, .contact-form {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contatti</h1>
+    </header>
+    <main>
+        <div class="contact-info">
+            <h2>Informazioni di contatto</h2>
+            <p>Email: <br>khaled126.sp@gmail.com <br>
+                alessandrocarpentieri.s@iisenzoferrari.it<br>
+                lorenzofiorillo.s@iisenzoferrari.it<br>
+                davidecatalano.s@iisenzoferrari.it
+            </p>
+
+            <p>Indirizzo: Via  Grottaferrata 76, 00178 Roma, Italia</p>
+        </div>
+        <div class="contact-form">
+            <h2>Invia un messaggio</h2>
+            <form action="send_message.php" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Messaggio:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Invia</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © 2023 Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
